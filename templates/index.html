@@ -3,32 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/Style.css">
+    <link rel="stylesheet" href="../css/Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>MyBuenOscar |</title>
+    <title>Inicio| MyBuenOscarRestaurant</title>
 </head>
 <body>
     <header>
         <div class="navbar-brand">
-        <nav class="navbar">
-            <a href="../frontend">
-                <img src="../src/bebidas/monster-blanca.png" alt="Logo" style="width: 32px; height: 32px; padding: 0; justify-content: center;">  
-            </a>
-            <a href="../frontend/carta.html">Carta</a>
-            <a href="../frontend/Promos.html">Promos</a>
-            <details class="dropdown">
-                <summary>Contactanos</summary>
-                <div class="dropdown-menu">
-                    <a href="mailto:MyBuenOscarRestaurant@gmail.com">Correo Electrónico</a>
-                    <a href="tel:+56958917375">Teléfono</a>
-                    <a href="https://wa.me/56958917375" target="_blank">WhatsApp</a>
-                </div>
-            </details>
-            <a href="../frontend/Login.html" id="cart-link">
-                Login
-            </a>
-        </nav>
-    </div>
+                <nav class="navbar">
+                    <a href="../templates/index.html" class="logo">
+                        <img src="../src/menu/bebidas/monster-blanca.png" alt="Logo" style="width: 32px; height: 32px; padding: 0; justify-content: center;">
+                    </a>
+                    <a href="../php/carta.php">Carta</a>
+                    <a href="../templates/Promos.html">Promos</a>
+                    <details class="dropdown">
+                        <summary>Contactanos</summary>
+                        <div class="dropdown-menu">
+                            <a href="mailto:MyBuenOscarRestaurant@gmail.com">Correo Electrónico</a>
+                            <a href="tel:+56958917375">Teléfono</a>
+                            <a href="https://wa.me/56958917375" target="_blank">WhatsApp</a>
+                        </div>
+                    </details>
+                    <a href="../templates/Login.html" id="cart-link">Login</a>
+                </nav>
+        </div>
     </header>
     <div id="back-container" class="container">
         <div class="main-content">
@@ -39,10 +37,10 @@
 
             <div class="carousel">
                 <div class="carousel-images">
-                    <img src="../src/platos/elestic.jpg" alt="Imagen 1">
-                    <img src="../src/platos/elmarcelo.jpg" alt="Imagen 2">
-                    <img src="../src/platos/elmateo.jpg" alt="Imagen 3">
-                    <img src="../src/platos/elpablo.jpg" alt="Imagen 4">
+                    <img src="../src/menu/platos/elmateo.jpg" alt="Imagen 1">
+                    <img src="../src/menu/platos/elmarcelo.jpg" alt="Imagen 2">
+                    <img src="../src/menu/platos/elmateo.jpg" alt="Imagen 3">
+                    <img src="../src/menu/platos/elpablo.jpg" alt="Imagen 4">
                 </div>
                 <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
                 <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>

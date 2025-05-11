@@ -1,21 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION['carrito'])) {
-    $_SESSION['carrito'] = [
-        [
-            'nombre' => 'El Mateo',
-            'precio' => 12000,
-            'cantidad' => 2,
-            'imagen' => '../src/menu/platos/elmateo.jpg'
-        ],
-        [
-            'nombre' => 'Bebida',
-            'precio' => 2000,
-            'cantidad' => 1,
-            'imagen' => '../src/menu/bebidas/inkacola.png'
-        ]
-    ];
-}
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -216,10 +200,11 @@ if (!isset($_SESSION['carrito'])) {
                         <?php
                         $total = 0;
                         foreach ($_SESSION['carrito'] as $index => $item) {
+                            $imagen = isset($item['imagen']) ? $item['imagen'] : '';
                             $subtotal = $item['precio'] * $item['cantidad'];
                             $total += $subtotal;
                             echo "<div class='cart-item'>
-                                <img src='{$item['imagen']}' alt='{$item['nombre']}' class='cart-item-image'>
+                                <img src='{$imagen}' alt='{$item['nombre']}' class='cart-item-image'>
                                 <div class='cart-item-details'>
                                     <p class='cart-item-name'>{$item['nombre']}</p>
                                     <p class='cart-item-price'>\$" . number_format($item['precio']) . "</p>
@@ -229,7 +214,6 @@ if (!isset($_SESSION['carrito'])) {
                                         <button class='quantity-btn' onclick='actualizarCantidad($index, \"sumar\")'>+</button>
                                     </div>
                                 </div>
-                                <button class='cart-item-edit' onclick='editarItem($index)'>Editar</button>
                             </div>";
                         }
                         ?>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/css/Style.css">
+    <link rel="stylesheet" href="../backend/css/Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Comprar</title>
 </head>
@@ -43,16 +43,9 @@
                                 <h3>El Mateo</h3>
                                 <p>Delicioso pollo cthulu para 4 personas.</p>
                                 <span class="price">$12.000</span>
-                                <!--php-->
-                                <form action="../backend/php/agregar_carrito.php" method="post">
-                                    <input type="text" name="id" hidden>
-                                    <input type="hidden" name="nombre" value="El Mateo">
-                                    <input type="hidden" name="precio" value="12000">
-                                    <input type="hidden" name="cantidad" value="1" min="1">
-                                    <button class="button" type="submit">
-                                        <h2>Añadir al carro</h2>
-                                    </button>
-                                </form>
+                                <h2>Añadir al carro</h2>
+                                </button>
+                              
                             </div>
                             <img src="../src/platos/elmateo.jpg" alt="Plato El Mateo">
                         </div>

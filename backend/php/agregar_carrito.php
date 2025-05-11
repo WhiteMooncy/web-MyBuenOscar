@@ -1,30 +1,28 @@
 <?php
 session_start();
 
-$nombre = $_POST['nombre'];
-$precio = intval($_POST['precio']);
-$cantidad = intval($_POST['cantidad']);
-
 if (!isset($_SESSION['carrito'])) {
     $_SESSION['carrito'] = [];
 }
 
-$encontrado = false;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'];
+    $precio = intval($_POST['precio']);
 
-// Si ya existe el producto en el carrito, suma la cantidad
-foreach ($_SESSION['carrito'] as &$item) {
-    if ($item['nombre'] === $nombre) {
-        $item['cantidad'] += $cantidad;
-        $encontrado = true;
-        break;
+    $existe = false;
+    foreach ($_SESSION['carrito'] as &$item) {
+        if ($item['nombre'] === $nombre) {
+            $item['cantidad'] += 1;
+            $existe = true;
+            break;
+        }
+    }
+    if (!$existe) {
+        $_SESSION['carrito'][] = [
+            'nombre' => $nombre,
+            'precio' => $precio,
+            'cantidad' => 1
+        ];
     }
 }
-
-if (!$encontrado) {
-    $_SESSION['carrito'][] = [
-        'nombre' => $nombre,
-        'precio' => $precio,
-        'cantidad' => $cantidad
-    ];
-}
-exit();
+?>

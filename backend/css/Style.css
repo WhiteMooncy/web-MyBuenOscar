@@ -18,7 +18,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-image: url(../img/fondo.png);
+    background-image: url(../src/img/fondo.png);
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100%;
@@ -67,9 +67,9 @@ nav a:hover {
     border-radius: 10px;
 }
 
-section {
+.section {
     padding: 20px;
-    border-bottom: 1px solid #181717;
+    border-bottom: 1px solid #000000;
 }
 
 .section:last-child {
@@ -401,3 +401,36 @@ button:hover {
     left: -150%; /* Desplazado fuera de la pantalla (a la izquierda) */
 }
 
+
+.buton-cart-min {
+    background-color: #f0ad4e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buton-cart-max {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buton-cart-delete {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buton-cart-min:hover,
+.buton-cart-max:hover,
+.buton-cart-delete:hover {
+    opacity: 0.8;
+}

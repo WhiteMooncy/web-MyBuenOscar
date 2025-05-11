@@ -8,6 +8,30 @@ session_start();
         <title>Pedir | MyBuenOscar</title>
         <link rel="stylesheet" href="../css/Style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <style>
+            .container {
+                text-align: center;
+            }
+            .quantity-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .buton-cart-min, .buton-cart-max {
+                color: white;
+                border: none;
+                padding: 5px 5px;
+                cursor: pointer;
+                font-size: 5%;
+            }
+            .buton-cart-min:hover, .buton-cart-max:hover {
+                background-color: green;
+            }
+            #cantidad {
+                margin: 0 8px;
+                font-size: 100%;
+            }
+    </style>
     </head>
     <body>
         <!-- Header -->
@@ -93,7 +117,7 @@ session_start();
                                         <h3>foreskin Oreos</h3>
                                         <p>Ricas oreos cubiertas de prepucio.</p>
                                         <span class="price">$10.000</span>
-                                        <button class="button"><h2>Añadir al carro</h2></button>
+                                        <button class="button" onclick="agregarCarrito('foreskin Oreos', 10000)">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121249_www.google.com.png" alt="oreos">
                                 </div>
@@ -102,27 +126,9 @@ session_start();
                                         <h3>Almuerzo vegano</h3>
                                         <p>Delicioso arroz con ketchup acompañado de pollo vegano.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button"><h2>Añadir al carro</h2></button>
+                                        <button class="button" onclick="agregarCarrito('Almuerzo vegano', 12000)">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121329_www.google.com.png" alt="pollo vegano">
-                                </div>
-                                <div class="item">
-                                    <div class="item-info">
-                                        <h3>El Estic</h3>
-                                        <p>Sabrosas paletas de caldo de pollo a la gelatina, perfectas para el calor.</p>
-                                        <span class="price">$12.000</span>
-                                        <button id="button" class="button"><h2>Añadir al carro</h2></button>
-                                    </div>
-                                    <img src="../src/menu/platos/elestic.jpg" alt="Plato de la Semana">
-                                </div>
-                                <div class="item">
-                                    <div class="item-info">
-                                        <h3>El Marcelo</h3>
-                                        <p>Pizza con una deliciosa base de porotos y huevos fritos.</p>
-                                        <span class="price">$12.000</span>
-                                        <button id="button" class="button"><h2>Añadir al carro</h2></button>
-                                    </div>
-                                    <img src="../src/menu/platos/elmarcelo.jpg" alt="Plato de la Semana">
                                 </div>
                             </div>
                         </div>
@@ -135,7 +141,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>Fanta de uva</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button"><h2>Añadir al carro</h2></button>
+                                        <button class="button" onclick="agregarCarrito('Fanta de uva', 2000)">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/fanta de uva.jpg" alt="Fanta de uva">
                                 </div>
@@ -143,7 +149,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>sprite</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button"><h2>Añadir al carro</h2></button>
+                                        <button class="button" onclick="agregarCarrito('sprite', 2000)">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/sprite.png" alt="Sprite">
                                 </div>
@@ -151,7 +157,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>coca-cola</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button"><h2>Añadir al carro</h2></button>
+                                        <button class="button" onclick="agregarCarrito('coca-cola', 2000)">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/coca-cola.png" alt="Coca-Cola">
                                 </div>
@@ -159,7 +165,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>inkacola</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button"><h2>Añadir al carro</h2></button>
+                                        <button class="button" onclick="agregarCarrito('inkacola', 2000)">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/inkacola.png" alt="Inka Cola">
                                 </div>
@@ -167,7 +173,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>sake</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button"><h2>Añadir al carro</h2></button>
+                                        <button class="button" onclick="agregarCarrito('sake', 2000)">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/sake.png" alt="Sake">
                                 </div>
@@ -175,7 +181,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>bebida</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button"><h2>Añadir al carro</h2></button>
+                                        <button class="button" onclick="agregarCarrito('bebida', 2000)">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/inkacola.png" alt="Bebida">
                                 </div>
@@ -200,18 +206,21 @@ session_start();
                         <?php
                         $total = 0;
                         foreach ($_SESSION['carrito'] as $index => $item) {
-                            $imagen = isset($item['imagen']) ? $item['imagen'] : '';
+                            $imagen = isset($item['imagen']) && !empty($item['imagen']) ? $item['imagen'] : '../src/menu/default-image.png';
                             $subtotal = $item['precio'] * $item['cantidad'];
                             $total += $subtotal;
-                            echo "<div class='cart-item'>
-                                <img src='{$imagen}' alt='{$item['nombre']}' class='cart-item-image'>
-                                <div class='cart-item-details'>
-                                    <p class='cart-item-name'>{$item['nombre']}</p>
-                                    <p class='cart-item-price'>\$" . number_format($item['precio']) . "</p>
-                                    <div class='cart-item-quantity'>
-                                        <button class='quantity-btn' onclick='actualizarCantidad($index, \"restar\")'>-</button>
-                                        <span>{$item['cantidad']}</span>
-                                        <button class='quantity-btn' onclick='actualizarCantidad($index, \"sumar\")'>+</button>
+                            echo "
+                            <div class='container'>
+                                <div class='cart-item'>
+                                    <img src='{$imagen}' alt='{$item['nombre']}' class='cart-item-image'>
+                                    <div class='cart-item-details'>
+                                        <p class='cart-item-name'>{$item['nombre']}</p>
+                                        <p class='cart-item-price' id='subtotal-{$index}'>\$" . number_format($subtotal) . "</p>
+                                        <div class='quantity-container'>
+                                            <button class='buton-cart-min' onclick='actualizarCantidad($index, \"restar\")'>-</button>
+                                            <span id='cantidad-{$index}'>{$item['cantidad']}</span>
+                                            <button class='buton-cart-max' onclick='actualizarCantidad($index, \"sumar\")'>+</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>";
@@ -261,6 +270,10 @@ session_start();
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
                     body: `index=${index}&accion=${accion}`
                 }).then(() => location.reload());
+            }
+
+            function continuarCompra() {
+                alert('Redirigiendo a la página de pago...');
             }
         </script>
     </body>

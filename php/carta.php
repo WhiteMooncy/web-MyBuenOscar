@@ -50,7 +50,7 @@ session_start();
                                         <h3>El Mateo</h3>
                                         <p>Delicioso pollo cthulu para 4 personas.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('El Mateo', 12000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('El Mateo', 12000, 'platos', 'elmateo')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/elmateo.jpg" alt="Plato El Mateo">
                                 </div>
@@ -59,7 +59,7 @@ session_start();
                                         <h3>El Pablo</h3>
                                         <p>Fina carne de ratón bañada en ketchup acompañada de papas y lechuga + bebida a elección.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('El Pablo', 12000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('El Pablo', 12000, 'platos', 'elpablo')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/elpablo.jpg" alt="Plato El Pablo">
                                 </div>
@@ -68,7 +68,7 @@ session_start();
                                         <h3>El Estic</h3>
                                         <p>Sabrosas paletas de caldo de pollo a la gelatina, perfectas para el calor.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('El Estic', 12000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('El Estic', 12000, 'platos', 'elestic')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/elestic.jpg" alt="Plato El Estic">
                                 </div>
@@ -77,7 +77,7 @@ session_start();
                                         <h3>El Marcelo</h3>
                                         <p>Pizza con una deliciosa base de porotos y huevos fritos.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('El Marcelo', 12000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('El Marcelo', 12000, 'platos', 'elmarcelo')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/elmarcelo.jpg" alt="Plato El Marcelo">
                                 </div>
@@ -93,7 +93,7 @@ session_start();
                                         <h3>foreskin Oreos</h3>
                                         <p>Ricas oreos cubiertas de prepucio.</p>
                                         <span class="price">$10.000</span>
-                                        <button class="button" onclick="agregarCarrito('foreskin Oreos', 10000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('foreskin Oreos', 10000, 'platos', 'foreskin-oreos')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121249_www.google.com.png" alt="oreos">
                                 </div>
@@ -102,7 +102,7 @@ session_start();
                                         <h3>Almuerzo vegano</h3>
                                         <p>Delicioso arroz con ketchup acompañado de pollo vegano.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('Almuerzo vegano', 12000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Almuerzo vegano', 12000, 'platos', 'almuerzo-vegano')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121329_www.google.com.png" alt="pollo vegano">
                                 </div>
@@ -111,7 +111,7 @@ session_start();
                                         <h3>Completo dulce</h3>
                                         <p>completo con cubierta de cereal y papitas.</p>
                                         <span class="price">$2.500</span>
-                                        <button class="button" onclick="agregarCarrito('Completo dulce', 2500)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Completo dulce', 2500, 'platos', 'completo-dulce')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121413_www.google.com.png" alt="Empanadas de queso">
                                 </div>
@@ -120,7 +120,7 @@ session_start();
                                         <h3>mamfimfla dulce</h3>
                                         <p>mamfimflas recien horneadas.</p>
                                         <span class="price">$5.000</span>
-                                        <button class="button" onclick="agregarCarrito('mamfimfla dulce', 5000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('mamfimfla dulce', 5000, 'platos', 'mamfimfla-dulce')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121442_www.google.com.png" alt="Empanadas de queso">
                                 </div>
@@ -129,7 +129,7 @@ session_start();
                                         <h3>Ratasush</h3>
                                         <p>ricos ratones trozados rellenos con queso crema.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('Ratasush', 12000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Ratasush', 12000, 'platos', 'ratasush')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121515_www.google.com.png" alt="Sushi">
                                 </div>
@@ -138,7 +138,7 @@ session_start();
                                         <h3>Cheetos con leche</h3>
                                         <p>ricos ratones trozados rellenos con queso crema.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('Cheetos con leche', 12000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Cheetos con leche', 12000, 'platos', 'cheetos-leche')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121531_www.google.com.png" alt="Cheetos">
                                 </div>
@@ -147,7 +147,7 @@ session_start();
                                         <h3>pepinillos mounstrosos</h3>
                                         <p>finos pepinillos conservado en Monster.</p>
                                         <span class="price">$8.000</span>
-                                        <button class="button" onclick="agregarCarrito('pepinillos mounstrosos', 8000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('pepinillos mounstrosos', 8000, 'platos','pepinillos-monstruosos')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/pepinillos mounstrosos.jpeg" alt="pepinillos">
                                 </div>
@@ -156,7 +156,7 @@ session_start();
                                         <h3>BananaSplit</h3>
                                         <p>delicionsa banana trozada con sardinas.</p>
                                         <span class="price">$6.000</span>
-                                        <button class="button" onclick="agregarCarrito('BananaSplit', 6000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('BananaSplit', 6000, 'platos', 'postre')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/postre.jpeg" alt="postre">
                                 </div>
@@ -165,7 +165,7 @@ session_start();
                                         <h3>SoupOfMakako</h3>
                                         <p>caldo de mono autraliano exportado.</p>
                                         <span class="price">$9.000</span>
-                                        <button class="button" onclick="agregarCarrito('SoupOfMakako', 9000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('SoupOfMakako', 9000, 'platos', 'sopa')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/sopa.jpeg" alt="sopademakako">
                                 </div>
@@ -174,7 +174,7 @@ session_start();
                                         <h3>Sushi</h3>
                                         <p>riko salmon recien pescado del artico.</p>
                                         <span class="price">$6.000</span>
-                                        <button class="button" onclick="agregarCarrito('Sushi', 6000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Sushi', 6000, 'platos', 'sushi')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/sushi.jpeg" alt="sushi">
                                 </div>
@@ -183,7 +183,7 @@ session_start();
                                         <h3>TdoPizza</h3>
                                         <p>Deliciosa pizza con todas las sobras de la Semana.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('TdoPizza', 12000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('TdoPizza', 12000, 'platos', 'tdopizza')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/tdopizza.jpeg" alt="pizza">
                                 </div>
@@ -192,7 +192,7 @@ session_start();
                                         <h3>Torta</h3>
                                         <p>Torta de fideos decorada con peperoni.</p>
                                         <span class="price">$20.000</span>
-                                        <button class="button" onclick="agregarCarrito('Torta', 20000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Torta', 20000, 'platos', 'torta')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/platos/torta.jpeg" alt="Torta">
                                 </div>
@@ -207,7 +207,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>Fanta de uva</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button" onclick="agregarCarrito('Fanta de uva', 2000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Fanta de uva', 2000, 'bebidas', 'fanta-uva')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/fanta de uva.jpg" alt="Fanta de uva">
                                 </div>
@@ -215,7 +215,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>Sprite</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button" onclick="agregarCarrito('Sprite', 2000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Sprite', 2000, 'bebidas', 'sprite')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/sprite.png" alt="Sprite">
                                 </div>
@@ -223,7 +223,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>Coca-Cola</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button" onclick="agregarCarrito('Coca-Cola', 2000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Coca-Cola', 2000, 'bebidas', 'coca-cola')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/coca-cola.png" alt="Coca-Cola">
                                 </div>
@@ -231,7 +231,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>Inka Cola</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button" onclick="agregarCarrito('Inka Cola', 2000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Inka Cola', 2000, 'bebidas', 'inkacola')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/inkacola.png" alt="Inka Cola">
                                 </div>
@@ -239,7 +239,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>Sake</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button" onclick="agregarCarrito('Sake', 2000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Sake', 2000, 'bebidas', 'sake')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/sake.png" alt="Sake">
                                 </div>
@@ -247,7 +247,7 @@ session_start();
                                     <div class="item-info">
                                         <h3>Bebida</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button" onclick="agregarCarrito('Bebida', 2000)">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Bebida', 2000, 'bebidas', 'inkacola')">Añadir al carrito</button>
                                     </div>
                                     <img src="../src/menu/bebidas/inkacola.png" alt="Bebida">
                                 </div>
@@ -322,11 +322,20 @@ session_start();
             <p>©2025 Restaurant MyBuenOscar. Todos los derechos reservados. <br>Desarrollado por los Incervibles</p>
         </footer>
         <script>
-            function agregarCarrito(nombre, precio) {
+            // Se añadio un type y una imagen para obtener la imagen del producto.
+            function agregarCarrito(nombre, precio, type, img) {
+
+                // este genera un SRC para obtener la imagen del producto.
+                // por ejemplo: agregarCarrito('El Mateo', 12000, 'platos', 'elmateo');
+                // el src sería: ../src/menu/platos/elmateo.png
+                var src = '../src/menu/' + type + '/' + img + '.png';
+
                 fetch('agregar_carrito.php', {
                     method: 'POST',
                     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: `nombre=${encodeURIComponent(nombre)}&precio=${precio}`
+                    
+                    // al body se le añadio el src para obtener la imagen del producto.
+                    body: `nombre=${encodeURIComponent(nombre)}&precio=${precio}&src=${encodeURIComponent(src)}`
                 }).then(() => location.reload());
             }
 

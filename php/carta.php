@@ -27,7 +27,7 @@ session_start();
                             <a href="https://wa.me/56958917375" target="_blank">WhatsApp</a>
                         </div>
                     </details>
-                    <a href="../templates/Login.html" id="cart-link">Login</a>
+                    <a href="../templates/Login-update-prox.html" id="cart-link">Login</a>
                 </nav>
             </div>
         </header>
@@ -52,7 +52,7 @@ session_start();
                                         <span class="price">$12.000</span>
                                         <button class="button" onclick="agregarCarrito('El Mateo', 12000, 'platos', 'elmateo')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/elmateo.jpg" alt="Plato El Mateo">
+                                    <img src="../src/menu/platos/elmateo.png" alt="Plato El Mateo">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -61,7 +61,7 @@ session_start();
                                         <span class="price">$12.000</span>
                                         <button class="button" onclick="agregarCarrito('El Pablo', 12000, 'platos', 'elpablo')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/elpablo.jpg" alt="Plato El Pablo">
+                                    <img src="../src/menu/platos/elpablo.png" alt="Plato El Pablo">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -70,7 +70,7 @@ session_start();
                                         <span class="price">$12.000</span>
                                         <button class="button" onclick="agregarCarrito('El Estic', 12000, 'platos', 'elestic')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/elestic.jpg" alt="Plato El Estic">
+                                    <img src="../src/menu/platos/elestic.png" alt="Plato El Estic">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -79,7 +79,7 @@ session_start();
                                         <span class="price">$12.000</span>
                                         <button class="button" onclick="agregarCarrito('El Marcelo', 12000, 'platos', 'elmarcelo')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/elmarcelo.jpg" alt="Plato El Marcelo">
+                                    <img src="../src/menu/platos/elmarcelo.png" alt="Plato El Marcelo">
                                 </div>
                             </div>
                         </div>
@@ -93,36 +93,36 @@ session_start();
                                         <h3>foreskin Oreos</h3>
                                         <p>Ricas oreos cubiertas de prepucio.</p>
                                         <span class="price">$10.000</span>
-                                        <button class="button" onclick="agregarCarrito('foreskin Oreos', 10000, 'platos', 'foreskin-oreos')">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('foreskin Oreos', 10000, 'platos', 'foreskinoreos')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121249_www.google.com.png" alt="oreos">
+                                    <img src="../src/menu/platos/foreskinoreos.png" alt="oreos">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
                                         <h3>Almuerzo vegano</h3>
                                         <p>Delicioso arroz con ketchup acompañado de pollo vegano.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('Almuerzo vegano', 12000, 'platos', 'almuerzo-vegano')">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Almuerzo vegano', 12000, 'platos', 'pollovegano')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121329_www.google.com.png" alt="pollo vegano">
+                                    <img src="../src/menu/platos/pollovegano.png" alt="pollo vegano">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
                                         <h3>Completo dulce</h3>
                                         <p>completo con cubierta de cereal y papitas.</p>
                                         <span class="price">$2.500</span>
-                                        <button class="button" onclick="agregarCarrito('Completo dulce', 2500, 'platos', 'completo-dulce')">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Completo dulce', 2500, 'platos', 'completodulce')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121413_www.google.com.png" alt="Empanadas de queso">
+                                    <img src="../src/menu/platos/completodulce.png" alt="Empanadas de queso">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
                                         <h3>mamfimfla dulce</h3>
                                         <p>mamfimflas recien horneadas.</p>
                                         <span class="price">$5.000</span>
-                                        <button class="button" onclick="agregarCarrito('mamfimfla dulce', 5000, 'platos', 'mamfimfla-dulce')">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('mamfimfla dulce', 5000, 'platos', 'mamflimfladulce')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121442_www.google.com.png" alt="Empanadas de queso">
+                                    <img src="../src/menu/platos/mamflimfladulce.png" alt="Empanadas de queso">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -131,16 +131,16 @@ session_start();
                                         <span class="price">$12.000</span>
                                         <button class="button" onclick="agregarCarrito('Ratasush', 12000, 'platos', 'ratasush')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121515_www.google.com.png" alt="Sushi">
+                                    <img src="../src/menu/platos/ratasush.png" alt="Sushi">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
                                         <h3>Cheetos con leche</h3>
                                         <p>ricos ratones trozados rellenos con queso crema.</p>
                                         <span class="price">$12.000</span>
-                                        <button class="button" onclick="agregarCarrito('Cheetos con leche', 12000, 'platos', 'cheetos-leche')">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Cheetos con leche', 12000, 'platos', 'cheetosconleche')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/Opera Captura de pantalla_2025-04-21_121531_www.google.com.png" alt="Cheetos">
+                                    <img src="../src/menu/platos/cheetosconleche.png" alt="Cheetos">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -149,7 +149,7 @@ session_start();
                                         <span class="price">$8.000</span>
                                         <button class="button" onclick="agregarCarrito('pepinillos mounstrosos', 8000, 'platos','pepinillos-monstruosos')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/pepinillos mounstrosos.jpeg" alt="pepinillos">
+                                    <img src="../src/menu/platos/pepinillos-mounstrosos.png" alt="pepinillos">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -158,7 +158,7 @@ session_start();
                                         <span class="price">$6.000</span>
                                         <button class="button" onclick="agregarCarrito('BananaSplit', 6000, 'platos', 'postre')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/postre.jpeg" alt="postre">
+                                    <img src="../src/menu/platos/postre.png" alt="postre">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -167,7 +167,7 @@ session_start();
                                         <span class="price">$9.000</span>
                                         <button class="button" onclick="agregarCarrito('SoupOfMakako', 9000, 'platos', 'sopa')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/sopa.jpeg" alt="sopademakako">
+                                    <img src="../src/menu/platos/sopa.png" alt="sopademakako">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -176,7 +176,7 @@ session_start();
                                         <span class="price">$6.000</span>
                                         <button class="button" onclick="agregarCarrito('Sushi', 6000, 'platos', 'sushi')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/sushi.jpeg" alt="sushi">
+                                    <img src="../src/menu/platos/sushi.png" alt="sushi">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -185,7 +185,7 @@ session_start();
                                         <span class="price">$12.000</span>
                                         <button class="button" onclick="agregarCarrito('TdoPizza', 12000, 'platos', 'tdopizza')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/tdopizza.jpeg" alt="pizza">
+                                    <img src="../src/menu/platos/tdopizza.png" alt="pizza">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">
@@ -194,7 +194,7 @@ session_start();
                                         <span class="price">$20.000</span>
                                         <button class="button" onclick="agregarCarrito('Torta', 20000, 'platos', 'torta')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/platos/torta.jpeg" alt="Torta">
+                                    <img src="../src/menu/platos/torta.png" alt="Torta">
                                 </div>
                             </div>
                         </div>
@@ -207,9 +207,9 @@ session_start();
                                     <div class="item-info">
                                         <h3>Fanta de uva</h3>
                                         <span class="price">$2.000</span>
-                                        <button class="button" onclick="agregarCarrito('Fanta de uva', 2000, 'bebidas', 'fanta-uva')">Añadir al carrito</button>
+                                        <button class="button" onclick="agregarCarrito('Fanta de uva', 2000, 'bebidas', 'fanta-de-uva')">Añadir al carrito</button>
                                     </div>
-                                    <img src="../src/menu/bebidas/fanta de uva.jpg" alt="Fanta de uva">
+                                    <img src="../src/menu/bebidas/fanta-de-uva.png" alt="Fanta de uva">
                                 </div>
                                 <div class="item">
                                     <div class="item-info">

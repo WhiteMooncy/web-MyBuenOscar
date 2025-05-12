@@ -18,6 +18,10 @@ html {
 }
 
 /* ----------------- Cuerpo de la página ----------------- */
+#Login{
+    background-image: none;
+    background-color: rgb(64, 64, 255);
+}
 body {
     margin: 0;
     padding: 0;

@@ -6,15 +6,15 @@ session_start();
     <head>
         <meta charset="UTF-8">
         <title>Pedir | MyBuenOscar</title>
-        <link rel="stylesheet" href="../css/Style.css">
+        <link rel="stylesheet" href="../src/css/Style.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body style="background-image: url(../src/img/fondo.png);">
         <!-- Header -->
         <header>
             <div class="navbar-brand">
                 <nav class="navbar">
-                    <a href="../templates/index.html" class="logo">
+                    <a href="../php/index.php" class="logo">
                         <img src="../src/menu/bebidas/monster-blanca.png" alt="Logo" style="width: 32px; height: 32px; padding: 0; justify-content: center;">
                     </a>
                     <a href="../php/carta.php">Carta</a>
@@ -27,7 +27,7 @@ session_start();
                             <a href="https://wa.me/56958917375" target="_blank">WhatsApp</a>
                         </div>
                     </details>
-                    <a href="../templates/Login-update-prox.html" id="cart-link">Login</a>
+                    <a href="../templates/login.html" id="cart-link">Login</a>
                 </nav>
             </div>
         </header>

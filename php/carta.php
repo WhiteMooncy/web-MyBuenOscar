@@ -257,7 +257,7 @@ session_start();
                     <!-- Aside -->
                     <aside class="cart-sidebar" id="cart">
                         <section>
-                            <h2>Tu Carrito (<span id="cart-count"><?php echo count($_SESSION['carrito']); ?></span>)</h2>
+                            <h2>Tu Carrito (<span id="cart-count"><?php echo isset($_SESSION['carrito']) && is_array($_SESSION['carrito']) ? count($_SESSION['carrito']) : 0; ?></span>)</h2>
                             <div class="cart-location">
                                 <label for="location">¿Dónde quieres pedir?</label>
                                 <select id="location">

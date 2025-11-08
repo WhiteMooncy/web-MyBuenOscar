@@ -1,0 +1,41 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de configuración local
+config/local.php
+.env
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+*.cache
+
+# Dependencias (si se usan en el futuro)
+vendor/
+node_modules/
+
+# Archivos de backup
+*.bak
+*.backup
+*~
+
+# Archivos de base de datos local
+*.sql.gz
+*.sql.zip
+
+# Carpetas de uploads (si se implementan)
+uploads/
+temp/
+
+# Archivos específicos de XAMPP
+.htaccess.bak
+php.ini.bak

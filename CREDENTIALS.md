@@ -77,20 +77,41 @@ VALUES (
 
 ### 1. Insertar Usuarios en la Base de Datos
 
-**Opción A: Desde MySQL Command Line**
-```bash
-cd c:\xampp\mysql\bin
-.\mysql.exe -u root web-mybuenoscar
-```
+**⚠️ IMPORTANTE: Ejecutar desde phpMyAdmin (Recomendado)**
 
-Luego ejecuta el script SQL de arriba.
-
-**Opción B: Desde phpMyAdmin**
 1. Abre http://localhost/phpmyadmin
 2. Selecciona la base de datos `web-mybuenoscar`
-3. Ve a la pestaña "SQL"
-4. Pega el script SQL de arriba
-5. Click en "Ejecutar"
+3. Click en la tabla `usuarios`
+4. Ve a la pestaña "Insertar"
+5. Agrega los usuarios manualmente:
+
+**Usuario Admin:**
+```
+Nombre: Administrador
+Correo: admin@mybuenoscar.com
+Contraseña: Admin123!
+Tipo_Usuario: admin
+```
+
+**Usuario Cliente:**
+```
+Nombre: Cliente Prueba
+Correo: cliente@ejemplo.com
+Contraseña: Cliente123!
+Tipo_Usuario: cliente
+```
+
+**O ejecuta este SQL en la pestaña "SQL":**
+```sql
+-- Limpiar tabla
+TRUNCATE TABLE usuarios;
+
+-- Insertar usuarios
+INSERT INTO usuarios (Nombre, Correo, Contraseña, Tipo_Usuario) VALUES 
+('Administrador', 'admin@mybuenoscar.com', 'Admin123!', 'admin'),
+('Cliente Prueba', 'cliente@ejemplo.com', 'Cliente123!', 'cliente'),
+('Juan Perez', 'juan@gmail.com', 'Juan123!', 'cliente');
+```
 
 ### 2. Probar Login
 

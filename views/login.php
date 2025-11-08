@@ -6,6 +6,9 @@
 // Cargar configuración
 require_once dirname(__DIR__) . '/config/config.php';
 
+// Iniciar sesión para mensajes
+session_start();
+
 // Título de la página
 $title = 'Iniciar Sesión | MyBuenOscar Restaurant';
 ?>
@@ -15,6 +18,27 @@ $title = 'Iniciar Sesión | MyBuenOscar Restaurant';
 <!-- Main Content -->
 <main class="main-container">
     <div style="max-width: 450px; margin: 2rem auto; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); padding: 3rem 2.5rem; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);">
+        
+        <!-- Mensajes de Error/Éxito -->
+        <?php if (isset($_SESSION['error'])): ?>
+            <div style="background: #fee2e2; border-left: 4px solid #ef4444; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; animation: slideDown 0.3s ease;">
+                <p style="color: #991b1b; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <strong><?php echo htmlspecialchars($_SESSION['error']); ?></strong>
+                </p>
+            </div>
+            <?php unset($_SESSION['error']); ?>
+        <?php endif; ?>
+        
+        <?php if (isset($_SESSION['success'])): ?>
+            <div style="background: #d1fae5; border-left: 4px solid #10b981; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; animation: slideDown 0.3s ease;">
+                <p style="color: #065f46; margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-check-circle"></i>
+                    <strong><?php echo htmlspecialchars($_SESSION['success']); ?></strong>
+                </p>
+            </div>
+            <?php unset($_SESSION['success']); ?>
+        <?php endif; ?>
         
         <!-- Logo y Título -->
         <div style="text-align: center; margin-bottom: 2rem;">

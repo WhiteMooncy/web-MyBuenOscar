@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!isset($_SESSION['carrito']) || !is_array($_SESSION['carrito'])) {
+    $_SESSION['carrito'] = [];
+}
 ?>
 <!DOCTYPE html>
 <html lang="es">

@@ -1,41 +1,250 @@
-# Archivos del sistema
+# ==========================================
+# Git Ignore - MyBuenOscar E-Commerce
+# ==========================================
+
+# ==========================================
+# Archivos del Sistema Operativo
+# ==========================================
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 desktop.ini
+$RECYCLE.BIN/
 
-# IDEs
+# ==========================================
+# IDEs y Editores
+# ==========================================
+# Visual Studio Code
 .vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs (PhpStorm, WebStorm, IntelliJ)
 .idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# Sublime Text
 *.sublime-project
 *.sublime-workspace
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
 
-# Archivos de configuración local
+# Atom
+.atom/
+
+# NetBeans
+nbproject/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# ==========================================
+# Configuración Sensible
+# ==========================================
+# Archivos de configuración con credenciales
+config/database.php
 config/local.php
+config/production.php
 .env
+.env.local
+.env.*.local
 
-# Archivos temporales
-*.tmp
-*.temp
-*.log
-*.cache
+# Archivos de credenciales
+credentials.json
+secrets.json
+*.key
+*.pem
+*.crt
 
-# Dependencias (si se usan en el futuro)
+# ==========================================
+# PHP
+# ==========================================
+# Composer
 vendor/
-node_modules/
+composer.lock
+composer.phar
 
-# Archivos de backup
-*.bak
-*.backup
-*~
+# PHP Sessions
+sessions/
+tmp/sessions/
 
-# Archivos de base de datos local
+# Logs de PHP
+*.log
+error_log
+php_errors.log
+debug.log
+
+# Cache de PHP
+*.cache
+cache/
+tmp/cache/
+
+# ==========================================
+# Base de Datos
+# ==========================================
+# Archivos SQL de backup
+*.sql
 *.sql.gz
 *.sql.zip
+*.sql.bak
+backups/*.sql
+database/backups/
 
-# Carpetas de uploads (si se implementan)
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# MySQL/MariaDB dumps
+dump.sql
+backup.sql
+
+# ==========================================
+# Archivos Subidos por Usuarios
+# ==========================================
+# Imágenes de productos (mantener estructura, no contenido)
+public/assets/productos/*
+!public/assets/productos/.gitkeep
+
+# Uploads temporales
 uploads/
 temp/
+tmp/
 
-# Archivos específicos de XAMPP
+# Archivos de usuarios
+user_uploads/
+customer_files/
+
+# ==========================================
+# JavaScript/Node.js (si se usa en frontend)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build outputs
+dist/
+build/
+out/
+
+# ==========================================
+# Archivos Temporales
+# ==========================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Backups
+*.bak
+*.backup
+*.old
+*.orig
+
+# ==========================================
+# Específicos de XAMPP/Apache
+# ==========================================
 .htaccess.bak
+.htpasswd
 php.ini.bak
+httpd.conf.bak
+
+# ==========================================
+# Archivos de Compilación/Minificación
+# ==========================================
+*.min.js
+*.min.css
+*.map
+
+# Archivos CSS/JS compilados
+public/assets/css/compiled/
+public/assets/js/compiled/
+
+# ==========================================
+# Testing
+# ==========================================
+coverage/
+.phpunit.result.cache
+phpunit.xml
+tests/_output/
+tests/_support/_generated/
+
+# ==========================================
+# Documentación Generada
+# ==========================================
+docs/api/
+docs/_build/
+phpdoc/
+
+# ==========================================
+# Archivos de Sistema/Temporales Windows
+# ==========================================
+*.stackdump
+[Dd]esktop.ini
+
+# ==========================================
+# Archivos de Sistema Mac
+# ==========================================
+.AppleDouble
+.LSOverride
+Icon
+
+# ==========================================
+# Archivos de Sistema Linux
+# ==========================================
+.directory
+.Trash-*
+.nfs*
+
+# ==========================================
+# Seguridad
+# ==========================================
+# Archivos con información sensible
+passwords.txt
+users.csv
+admin_credentials.txt
+api_keys.txt
+
+# Archivos de sesión PHP
+sess_*
+
+# ==========================================
+# Otros
+# ==========================================
+# Archivos grandes
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.iso
+
+# Archivos de video/audio (si no son parte del proyecto)
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.mp3
+*.wav
+
+# Archivos PSD grandes
+*.psd

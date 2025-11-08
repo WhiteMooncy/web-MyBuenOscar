@@ -3,6 +3,19 @@
 # ==========================================
 
 # ==========================================
+# Documentación Interna (Solo Local)
+# ==========================================
+CONFIGURACION_SEGURA.md
+CREDENTIALS.md
+GUIA_LOGIN.md
+LIMPIEZA_GIT.md
+PROMPT_ECOMMERCE_PROFESIONAL.md
+REORGANIZATION.md
+SETUP_COMPLETO.md
+SUMMARY.md
+TESTING.md
+
+# ==========================================
 # Archivos del Sistema Operativo
 # ==========================================
 .DS_Store
